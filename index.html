@@ -9,15 +9,33 @@
         </title>
 
     </head>
-    <body >
+    <body onload="animateString('checkLeapYear')">
 
-        <body onload="animateString('target')" >
-            <pre id="target">texto</pre>
-        </body>
-
-        
-
-        <script src="ex_5_rotateString.js"></script>
-
+        <div >
+			<pre id="checkLeapYear">CheckLeapYear </pre>
+			<input type="text" id="userInput">
+				<button  onclick="checkLeapYear(userInput)"> check </button>
+				<div >
+					<pre id="LeapYear_output"></pre>
+				</div>
+	
+			</input>
+		</div>
+		
+		<div >
+			<button onclick="checkJanFirst()"> Check January 1st </button>
+			<pre id="JanFirst_output"></pre>
+			
+		</div>
+		
+		<input type="text" id="numberInput">
+		<button onclick="randomNumber()"> check </button>
+		<pre id="randNumber_output"></pre>
+		
+	</input>
+	<script src="5_rotateString.js"></script>
+	<script src="6_checkLeapYear.js"></script>
+	<script src="7_findJan1.js"></script>
+	<script src="8_GuessRandomNumber.js"></script>
     </body>
 </html>
