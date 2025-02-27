@@ -1,6 +1,6 @@
 function checkJanFirst(){
-    let JanFirst = new Date(0, 1, 1, 0, 0, 0)
-	let weekDays = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"]
+    let JanFirst = new Date(0, 1, 1, 0, 0, 0);
+	let weekDays = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"];
 
 	if (document.getElementById("JanFirst_output").textContent.length === 0)
 	{

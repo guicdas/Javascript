@@ -3,6 +3,8 @@ function randomNumber(){
 
 	if (isNaN(numberInput) || numberInput == "")
         document.getElementById("randNumber_output").textContent = "Error: NaN.";
+	else if (numberInput > 10 || numberInput < 0)
+		document.getElementById("randNumber_output").textContent = "Error: Number should be between 1-10 ";
 	else if (numberInput == getRandomInt(10))
 		document.getElementById("randNumber_output").textContent = "Good Work";
 	else

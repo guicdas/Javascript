@@ -5,5 +5,5 @@ function animateString(target){
     setInterval(function () {
         text = text[text.length - 1] + text.substring(0, text.length - 1);
         str.childNodes[0].data = text;
-    }, 300);
+    }, 400);
 }
