@@ -10,29 +10,67 @@
 	</head>
 	
 	<body onload="animateTitles()">
-		<div>
-			<a href="https://www.w3resource.com/javascript-exercises/javascript-basic-exercise-6.php" id="title6" class="title" target="_blank"> 
-				<pre >Exercice 6</pre>
-			</a>
-			<input type="text" id="userInput" placeholder="Enter a Year">
-				<button  onclick="checkLeapYear(userInput)"> check </button>
-				<pre id="LeapYear_output"></pre>
-			</input>
-		</div>
-		
+
 		<div >
-			<a href="https://www.w3resource.com/javascript-exercises/javascript-basic-exercise-7.php" id="title7" class="title" target="_blank"> 
-				<pre >Exercice 7</pre>
+			<a href="https://www.w3resource.com/javascript-exercises/fundamental/javascript-fundamental-exercise-6.php" id="title_6" class="title" target="_blank"> 
+				<pre >[Fund I] Exercice 6</pre>
 			</a>
 			<p ></p>
-			<button onclick="checkJanFirst()"> Check January 1st </button>
-			<pre id="JanFirst_output"></pre>
+			<button onclick="nestedJSON()">check</button>
+			<pre id="JSON_output"></pre>
+		</div>
+
+		<div >
+			<a href="https://www.w3resource.com/javascript-exercises/javascript-basic-exercise-42.php" id="title42" class="title" target="_blank"> 
+				<pre >[Basic] Exercice 42</pre>
+			</a>
+			<input type="text" id="numberListInput" placeholder="Input numbers"></input>
 			
+			<div class="output-container">
+				<div>
+					<button onclick="checkModes('soft')">Check Soft</button>
+					<pre id="soft_output"></pre>
+				</div>
+				<div ><p></p><button onclick="checkModes('both')">Check Both</button></div>
+				<div>
+					<button onclick="checkModes('hard')">Check Hard</button>
+					<pre id="hard_output"></pre>
+				</div>
+			</div>
+			
+		</div>
+
+		<div >
+			<a href="https://www.w3resource.com/javascript-exercises/javascript-basic-exercise-23.php" id="title23" class="title" target="_blank"> 
+				<pre >[Basic] Exercice 23</pre>
+			</a>
+			<input type="text" id="stringInput" placeholder="Enter a string to swap it!">
+				<button onclick="swapFirstLast()">Swap!</button>
+				<pre id="stringSwapped_output"></pre>
+			</input>
+		</div>
+
+		<div >
+			<a href="https://www.w3resource.com/javascript-exercises/javascript-basic-exercise-12.php" id="title12" class="title" target="_blank"> 
+				<pre >[Basic] Exercice 12</pre>
+			</a>
+			<p ></p>
+			<button onclick="getWebsiteURL()">print Website URL</button>
+			<pre id="webURL_output"></pre>
+		</div>
+
+		<div >
+			<a href="https://www.w3resource.com/javascript-exercises/javascript-basic-exercise-9.php" id="title9" class="title" target="_blank"> 
+				<pre >[Basic] Exercice 9</pre>
+			</a>
+			<p ></p>
+			<button onclick="countDaysToChristmas()">Count Days Before Christmas</button>
+			<pre id="daysTillChristmas_output"></pre>
 		</div>
 		
 		<div >
 			<a href="https://www.w3resource.com/javascript-exercises/javascript-basic-exercise-8.php" id="title8" class="title" target="_blank"> 
-				<pre >Exercice 8</pre>
+				<pre >[Basic] Exercice 8</pre>
 			</a>
 			<input type="text" id="numberInput" placeholder="Guess a number between 1-10">
 				<button onclick="randomNumber()">Guess!</button>
@@ -41,21 +79,36 @@
 		</div>
 
 		<div >
-			<a href="https://www.w3resource.com/javascript-exercises/javascript-basic-exercise-9.php" id="title9" class="title" target="_blank"> 
-				<pre >Exercice 9</pre>
+			<a href="https://www.w3resource.com/javascript-exercises/javascript-basic-exercise-7.php" id="title7" class="title" target="_blank"> 
+				<pre >[Basic] Exercice 7</pre>
 			</a>
 			<p ></p>
-			<button onclick="countDaysToChristmas()">Count Days Before Christmas</button>
-			<pre id="daysTillChristmas_output"></pre>
+			<button onclick="checkJanFirst()"> Check January 1st </button>
+			<pre id="JanFirst_output"></pre>
+			
+		</div>
+
+		<div>
+			<a href="https://www.w3resource.com/javascript-exercises/javascript-basic-exercise-6.php" id="title6" class="title" target="_blank"> 
+				<pre >[Basic] Exercice 6</pre>
+			</a>
+			<input type="text" id="userInput" placeholder="Enter a Year">
+				<button  onclick="checkLeapYear(userInput)"> check </button>
+				<pre id="LeapYear_output"></pre>
+			</input>
 		</div>
 
 	<script src="utils.js"></script>
 
-	<script src="5_rotateString.js"></script>	
-	<script src="6_checkLeapYear.js"></script>
-	<script src="7_findJan1.js"></script>
-	<script src="8_GuessRandomNumber.js"></script>
-	<script src="9_daysBeforeChristmas.js"></script>
+	<script src="Basic/5_rotateString.js"></script>	
+	<script src="Basic/6_checkLeapYear.js"></script>
+	<script src="Basic/7_findJan1.js"></script>
+	<script src="Basic/8_GuessRandomNumber.js"></script>
+	<script src="Basic/9_daysBeforeChristmas.js"></script>
+	<script src="Basic/12_webURL.js"></script>
+	<script src="Basic/23_swapFirstLast.js"></script>
+	<script src="Basic/42_softMode.js"></script>
+	<script src="Fundamentals/6_nestedJSON.js"></script>
 
 	</body>
 </html>
